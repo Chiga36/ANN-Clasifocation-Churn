@@ -1,5 +1,4 @@
-python>=3.9,<3.12
-tensorflow==2.15.0
+tensorflow==2.16.1
 pandas
 numpy
 scikit-learn
