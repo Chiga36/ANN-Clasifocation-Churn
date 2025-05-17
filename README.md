@@ -9,3 +9,9 @@ while deploying your streamlit app with an older version of python,tensorflow: f
 pythonVersion = "3.11"
 
 Easy
+
+pictoral representation
+1. ![image](https://github.com/user-attachments/assets/628a5869-4e65-4b74-8da0-f384782be0f9)
+2. ![image](https://github.com/user-attachments/assets/243b1592-95a4-4635-834c-b7e8f81998ce)
+3. ![image](https://github.com/user-attachments/assets/c2c54839-827a-4bc5-83c9-4d928da08d09)
+4. ![image](https://github.com/user-attachments/assets/de059e33-0fa6-4868-920a-a28d43505797)
