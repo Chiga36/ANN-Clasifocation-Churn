@@ -12,8 +12,8 @@ with open('one_hot_encode_geo.pkl','rb') as file:
     one_hot_encode_geo = pickle.load(file)
 with open('label_encoder_gender.pkl','rb') as file:
     label_encoder_gender = pickle.load(file)
-with open('scalar.pkl','rb') as file:
-    scalar = pickle.load(file)
+with open('scalar_reg.pkl','rb') as file:
+    scalar_reg = pickle.load(file)
 
 ## Streamlit app
 st.title("Estimated Salary Prediction")
@@ -49,7 +49,7 @@ geo_encoded_df = pd.DataFrame(geo_encoded,columns = one_hot_encode_geo.get_featu
 ## concatination one hot encoded
 input_data = pd.concat([input_data.reset_index(drop = True),geo_encoded_df],axis=1)
 
-input_data_scaled = scalar.transform(input_data)
+input_data_scaled = scalar_reg.transform(input_data)
 
 predict = model.predict(input_data_scaled)
 pridict_salary = predict[0][0]
